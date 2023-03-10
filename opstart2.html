@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="mijnscript.js"></script>
+    <link rel="stylesheet" href="mijnstyle.css">
+    
+    <script>
+        function hierTeBeginnen(){
+            // de DOM Document Object Model
+            // Object Oriented Programming
+            // if for
+            var voornaam = document.getElementById("invoer").value;
+            if(voornaam == "Jelle"){
+                alert('dat is VIP Jelle');
+            } else{
+                alert('dit is een normaal kaartje');
+            }
+            document.getElementById("uitvoer").innerHTML = "welkom " + voornaam;
+            for( var x= 0 ; x < 3 ; x+= 1){
+                alert("weer een nieuw rondje " +x );
+            }
+        
+        }
+    </script>
+</head>
+<body>
+    <input id="invoer">
+    <input type="button" value="Klik hier" onclick="hierTeBeginnen()">
+    <div id="uitvoer"></div>
+
+    <!--Citeren
+
+    { curly bracket accolade
+    ; Semicolon 
+    < kleiner dan  winkelhaak  tag-open
+    ~ squickly line  tilde
+    [ square brackets  blokhaken
+    ( parenthesis 
+    _ underscore
+    / forwardslash slash
+    \ backslash
+    # hashtag
+    `  backtick     "Hoi ik ben" + voornaam + "en ben" + leeftijd + "oud"
+                    `Hoi ik ben ${voornaam} en ben ${leeftijd} oud`
+    '  aanhalings teken  quote
+    "  dubbele aanhalingsteken double quote
+    -  dash
+    | pipe
+    ?!
+    ^ dakje accent circonflex
+    * sterretje asterisk
+
+    -->
+</body>
+</html>
